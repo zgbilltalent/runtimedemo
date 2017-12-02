@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gb0-o1-Fxd">
+                                <rect key="frame" x="111" y="213" width="31" height="30"/>
+                                <state key="normal" title="测试"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C3l-mR-iOf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAk-SI-Ba1">
+                                <rect key="frame" x="162" y="213" width="92" height="30"/>
+                                <state key="normal" title="动态添加方法"/>
+                                <connections>
+                                    <action selector="btnAddClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j6o-6c-P3g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEu-oL-oG7">
+                                <rect key="frame" x="111" y="335" width="123" height="30"/>
+                                <state key="normal" title="分类动态添加属性"/>
+                                <connections>
+                                    <action selector="btnAddProperty:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RA5-JD-Mor"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HQ-va-H06">
+                                <rect key="frame" x="111" y="385" width="62" height="30"/>
+                                <state key="normal" title="方法替换"/>
+                                <connections>
+                                    <action selector="methodSWClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y7u-9y-Td6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3z-9z-sck">
+                                <rect key="frame" x="111" y="460" width="69" height="30"/>
+                                <state key="normal" title="关于Block"/>
+                                <connections>
+                                    <action selector="BlockClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="waq-gq-2rz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXH-gL-tuq">
+                                <rect key="frame" x="15" y="500" width="30" height="30"/>
+                                <state key="normal" title="Mar"/>
+                                <connections>
+                                    <action selector="btnMarClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ww7-uj-eGN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BH-3W-MvK">
+                                <rect key="frame" x="25" y="50" width="33" height="30"/>
+                                <state key="normal" title="GCD"/>
+                                <connections>
+                                    <action selector="btnGCDClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PKx-yU-KM9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9HQ-va-H06" secondAttribute="trailing" constant="20" symbolic="YES" id="0Vv-wk-9yQ"/>
+                            <constraint firstItem="sEu-oL-oG7" firstAttribute="leading" secondItem="Gb0-o1-Fxd" secondAttribute="leading" id="10m-Eq-E43"/>
+                            <constraint firstItem="9HQ-va-H06" firstAttribute="leading" secondItem="sEu-oL-oG7" secondAttribute="leading" id="4gk-cw-xGg"/>
+                            <constraint firstItem="MXH-gL-tuq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="4v2-Wh-1j0"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4BH-3W-MvK" secondAttribute="trailing" constant="20" symbolic="YES" id="8el-Ug-Fb3"/>
+                            <constraint firstItem="4BH-3W-MvK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Muu-wH-lol"/>
+                            <constraint firstItem="9HQ-va-H06" firstAttribute="top" secondItem="sEu-oL-oG7" secondAttribute="bottom" constant="20" id="N42-fH-SkP"/>
+                            <constraint firstItem="jAk-SI-Ba1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Gb0-o1-Fxd" secondAttribute="trailing" constant="8" symbolic="YES" id="Oue-94-jZb"/>
+                            <constraint firstItem="Gb0-o1-Fxd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="PWt-rP-7OT"/>
+                            <constraint firstItem="jAk-SI-Ba1" firstAttribute="centerY" secondItem="Gb0-o1-Fxd" secondAttribute="centerY" id="RXl-wD-St0"/>
+                            <constraint firstItem="sEu-oL-oG7" firstAttribute="top" secondItem="Gb0-o1-Fxd" secondAttribute="bottom" constant="92" id="SO6-ot-oAb"/>
+                            <constraint firstItem="MXH-gL-tuq" firstAttribute="top" secondItem="o3z-9z-sck" secondAttribute="bottom" constant="10" id="U7g-Me-asa"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="o3z-9z-sck" secondAttribute="trailing" constant="20" symbolic="YES" id="XSA-Hm-W85"/>
+                            <constraint firstItem="4BH-3W-MvK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Ygn-7f-FZR"/>
+                            <constraint firstItem="o3z-9z-sck" firstAttribute="top" secondItem="9HQ-va-H06" secondAttribute="bottom" constant="45" id="bW4-oG-6Eu"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MXH-gL-tuq" secondAttribute="trailing" constant="20" symbolic="YES" id="c0a-FF-4Gx"/>
+                            <constraint firstAttribute="trailing" secondItem="jAk-SI-Ba1" secondAttribute="trailing" constant="121" id="jIF-WS-irU"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sEu-oL-oG7" secondAttribute="trailing" constant="20" symbolic="YES" id="mBh-gF-Wub"/>
+                            <constraint firstItem="Gb0-o1-Fxd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="193" id="mGy-p2-HlP"/>
+                            <constraint firstItem="o3z-9z-sck" firstAttribute="leading" secondItem="9HQ-va-H06" secondAttribute="leading" id="vfB-jS-Yh1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1791" y="-412"/>
+        </scene>
+        <!--Block Demo Vc-->
+        <scene sceneID="PMM-6P-K6O">
+            <objects>
+                <viewController storyboardIdentifier="BlockDemoVc" id="qiK-VQ-W1j" customClass="BlockDemoVc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AuJ-Ck-drX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqg-RA-KMH">
+                                <rect key="frame" x="50" y="70" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="commClick:" destination="qiK-VQ-W1j" eventType="touchUpInside" id="Lez-E8-eDA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lqg-RA-KMH" firstAttribute="top" secondItem="EuJ-eQ-8qj" secondAttribute="top" constant="50" id="UPW-eZ-VRd"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lqg-RA-KMH" secondAttribute="trailing" constant="20" symbolic="YES" id="dBb-SD-j8s"/>
+                            <constraint firstItem="lqg-RA-KMH" firstAttribute="leading" secondItem="EuJ-eQ-8qj" secondAttribute="leading" constant="50" id="kSM-St-7VY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EuJ-eQ-8qj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nic-jm-aId" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1094" y="384"/>
+        </scene>
+    </scenes>
+</document>

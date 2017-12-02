@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="oclint-0.12"><file name="/Users/zhanggai/Library/Developer/Xcode/DerivedData/runtimedemo-cumwadkifbaxgwgbeqtvnarhsvsj/Build/Intermediates.noindex/Pods.build/Release-iphonesimulator/Pods-runtimedemo.build/DerivedSources/Pods_runtimedemo_vers.c">
+<violation begincolumn="2" endcolumn="59" beginline="1" endline="1" priority="5" rule="long variable name" ruleset="naming" >
+Length of variable name `Pods_runtimedemoVersionString` is 29, which is longer than the threshold of 20
+</violation>
+</file>
+
+<file name="/Users/zhanggai/Library/Developer/Xcode/DerivedData/runtimedemo-cumwadkifbaxgwgbeqtvnarhsvsj/Build/Intermediates.noindex/Pods.build/Release-iphonesimulator/Pods-runtimedemo.build/DerivedSources/Pods_runtimedemo_vers.c">
+<violation begincolumn="2" endcolumn="22" beginline="2" endline="2" priority="5" rule="long variable name" ruleset="naming" >
+Length of variable name `Pods_runtimedemoVersionNumber` is 29, which is longer than the threshold of 20
+</violation>
+</file>
+
+<file name="/Users/zhanggai/Library/Developer/Xcode/DerivedData/runtimedemo-cumwadkifbaxgwgbeqtvnarhsvsj/Build/Intermediates.noindex/Pods.build/Release-iphonesimulator/Pods-runtimedemo.build/DerivedSources/Pods_runtimedemo_vers.c">
+<violation begincolumn="2" endcolumn="126" beginline="4" endline="4" priority="5" rule="long variable name" ruleset="naming" >
+Length of variable name `Pods_runtimedemoVersionString` is 29, which is longer than the threshold of 20
+</violation>
+</file>
+
+<file name="/Users/zhanggai/Library/Developer/Xcode/DerivedData/runtimedemo-cumwadkifbaxgwgbeqtvnarhsvsj/Build/Intermediates.noindex/Pods.build/Release-iphonesimulator/Pods-runtimedemo.build/DerivedSources/Pods_runtimedemo_vers.c">
+<violation begincolumn="2" endcolumn="78" beginline="5" endline="5" priority="5" rule="long variable name" ruleset="naming" >
+Length of variable name `Pods_runtimedemoVersionNumber` is 29, which is longer than the threshold of 20
+</violation>
+</file>
+
+</pmd>
